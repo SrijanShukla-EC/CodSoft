@@ -1,5 +1,3 @@
-# CodSoft
-CodSoft intenship C++ codes.
 include<iostream>
 char op;
 double num1;
