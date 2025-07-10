@@ -30,8 +30,8 @@ switch(op){
         	    std::cout<<"The result : "<<result<<'\n';
         	    break;
     deafaul:
-        	    std::cout<<"Enter either '+', '-', '*' or '/'.";
-              break;      
+        	    std::cout<<"Enter either +, -, * or /.";
+                break;      
 }
 return 0;
 }
