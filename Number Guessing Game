@@ -13,7 +13,7 @@ num=(rand()%100)+1;
 std::cout<<" ***** Number Guessing Game ***** \n";
 std::cout<<"__________________________________ \n";
 std::cout<<"Enter Your Name: \n";
-std::getline(cin, name);
+std::getline(std::cin, name);
 do{
    std::cout<<"Enter a guess between 1 and 100: ";
    std::cin>>guess;
