@@ -1,9 +1,9 @@
-include<iostream>
+#include<iostream>
+int main(){
 char op;
 double num1;
 double num2;
 double result;
-int main (){
 std::cout<<" ***** This is a simple Calculator ***** \n";
 std::cout<<"_________________________________________ \n";
 std::cout<<"Enter the first number: ";
@@ -12,7 +12,7 @@ std::cout<<"Enterthe second number: ";
 std::cin>>num2;
 std::cout<<"Enter the Operand (+,-,*,/): ";
 std::cin>>op;
-Switch(op){
+switch(op){
     case'+':
               result= num1 + num2;
               std::cout<<" The solution is: "<<result<<'\n';
