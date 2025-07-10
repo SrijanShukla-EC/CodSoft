@@ -1,0 +1,39 @@
+#include<iostream>
+#include<ctime>
+#include<string>
+int main(){
+int num;
+int guess;
+int tries = 0;
+std::string name;
+
+srand(time (NULL));
+num=(rand()%100)+1;
+
+std::cout<<" ***** Number Guessing Game ***** \n";
+std::cout<<"__________________________________ \n";
+std::cout<<"Enter Your Name: \n";
+std::getline(cin, name);
+do{
+   std::cout<<"Enter a guess between 1 and 100: ";
+   std::cin>>guess;
+   tries++;
+   if(guess> num + 10){
+      std::cout<<"Your guess is too high! \n";
+   }
+   else if(guess>num){
+                    std::cout<<"Your guess is a little high!  \n";
+                }
+   else if(guess<num-10){
+                    std::cout<<"Your guess is too low!  \n";
+                }
+   else if(guess<num){
+                    std::cout<<"Your guess is a little low!  \n";
+                }
+   else{
+        std::cout<<" CONGRATULATIONS! "<<name<<'\n';
+        std::cout<<"You got it right in "<<tries<<"tries \n";
+                }
+}while(guess != num);
+return 0;
+}
