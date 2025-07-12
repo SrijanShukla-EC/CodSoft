@@ -1,0 +1,4 @@
+#include<iostream>
+#include<ctime>
+void drawboard(char*spaces);
+void playermove(char*space,char player);
