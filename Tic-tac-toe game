@@ -1,4 +1,42 @@
 #include<iostream>
 #include<ctime>
 void drawboard(char*spaces);
-void playermove(char*space,char player);
+void playermove(char*space, char player);
+void computermove(char*spaces, char computer);
+bool checkwinner(char*spaces, char player, char computer);
+bool checktie(char*spaces);
+
+int main()
+{
+    char spaces[9] = {' ',' ',' ',' ',' ',' ' ',' ',' '};
+char player = 'X';
+char computer = 'O';
+bool running = true;
+
+drawboard(spaces);
+
+while(running){
+     playermove(spaces, player);
+     drawboard(spaces);
+     if(checkwinner(spaces, player, computer)){
+          running = false;
+          break;
+     }
+     else if(checktie(spaces)){
+          running = false;
+          break;
+     }
+     computermove(spaces, computer);
+     drawboard(spaces);
+     if(checkwinner(spaces, player, computer)){
+         running = false;
+         break;
+     }
+     else if(checktie(spaces)){
+         running = false;
+         break;
+     }
+ }
+ std::cout<<"Thanks for playing! \n";
+ return 0;
+}
