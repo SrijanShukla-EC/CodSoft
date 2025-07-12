@@ -1,5 +1,7 @@
 #include<iostream>
 #include<ctime>
+#include<cstdlib>
+
 void drawboard(char*spaces);
 void playermove(char*space, char player);
 void computermove(char*spaces, char computer);
@@ -66,7 +68,6 @@ void playermove(char *spaces, char player){
 }
 void computermove(char *spaces, char computer){
     int number;
-    srand(time(0));
     while(true){
          number = rand() %9;
         if (number >= 1 && number <= 9 && spaces[number - 1] == ' ') {
