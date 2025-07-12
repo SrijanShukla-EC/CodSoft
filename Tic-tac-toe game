@@ -10,6 +10,9 @@ bool checktie(char*spaces);
 
 int main()
 {
+std::cout<<" This is a Tic-Tac-Toe game  \n";
+std::cout<<"____________________________ \n";
+
 char spaces[9] = {' ' ,' ' ,' ' ,' ' ,' ' ,' ' ,' ' ,' ' ,' '};
 char player = 'X';
 char computer = 'O';
