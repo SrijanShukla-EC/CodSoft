@@ -13,6 +13,7 @@ char player = 'X';
 char computer = 'O';
 bool running = true;
 
+srand(time(0));
 drawboard(spaces);
 
 while(running){
