@@ -75,7 +75,7 @@ void computermove(char *spaces, char computer){
     }
 }
 bool checkwinner(char *spaces, char player, char computer){
-    if((spaces[0] != ' ) && (spaces[0] == spaces[1]) && (spaces[1] == spaces[2])){
+    if((spaces[0] != ' ' ) && (spaces[0] == spaces[1]) && (spaces[1] == spaces[2])){
         spaces[0] == player? std::cout << "You Win! \n" : std::cout<<"You Loose!";
     }
     else if((spaces[3] != ' ') && (spaces[3] == spaces[4]) && (spaces[4] == spaces[5])){
