@@ -64,14 +64,14 @@ void playermove(char *spaces, char player){
            spaces[number] = player;
            break;
         }
-     }while(number < 0 || number > 8 space [number] != ' ');
+     }while(number < 0 || number > 8 || space [number] != ' ');
 }
 void computermove(char *spaces, char computer){
     int number;
     while(true){
-         number = rand() %9;
-        if (number >= 1 && number <= 9 && spaces[number - 1] == ' ') {
-            spaces[number - 1] = computer;
+         number = rand() % 9;
+        if (spaces[number] == ' ') {
+            spaces[number] = computer;
             break;
          }
    }
